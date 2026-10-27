@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Partner | Free Geek Toronto</title>
+    <meta name="description" content="Join Free Geek Toronto's B2B partner network. CSR compliance, community impact, and co-marketing opportunities.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="nav-logo">Free Geek</span>
+                <span class="nav-subtitle">Toronto</span>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="itad.html" class="nav-link">Corporate ITAD</a>
+                </li>
+                <li class="nav-item">
+                    <a href="partners.html" class="nav-link nav-link-active">Become a Partner</a>
+                </li>
+                <li class="nav-item">
+                    <a href="calculator.html" class="nav-link">Impact Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resources.html" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="directory.html" class="nav-link">Partner Directory</a>
+                </li>
+                <li class="nav-item nav-item-cta">
+                    <a href="#partner-form" class="nav-cta">Get Started</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Become a Corporate Partner</h1>
+            <p class="page-subtitle">Join Toronto's sustainable tech movement and amplify your impact</p>
+        </div>
+    </header>
+
+    <!-- Partner Benefits -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Partner Benefits</h2>
+                <p class="section-lead">More than just ITAD - a strategic partnership for your business</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>CSR Target Compliance</h3>
+                    <p>Meet your environmental, social, and governance goals with measurable impact metrics and certified reporting.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Community Social Impact</h3>
+                    <p>Directly support affordable technology access and job training for underrepresented groups facing barriers to employment.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Co-Marketing Visibility</h3>
+                    <p>Get featured in our Partner Directory, social media recognition, and opportunities for joint marketing initiatives.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Professional ITAD Services</h3>
+                    <p>Access certified, secure, and reliable IT asset disposition services tailored to your organization's needs.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Cost Optimization</h3>
+                    <p>Save on disposal costs with our flexible pricing model - fees waived for high-yield, uniform laptop fleets.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Local Toronto Impact</h3>
+                    <p>Make a difference in your own community while building stronger local connections and brand reputation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Form -->
+    <section id="partner-form" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Partner Intake Form</h2>
+                <p class="section-lead">Tell us about your organization and ITAD needs - completely self-serve and automated</p>
+            </div>
+            <div class="form-container">
+                <form id="partnerIntakeForm" class="partner-form" novalidate>
+                    <div class="form-section">
+                        <h3>Company Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="companyName" class="form-label">Company Name <span class="required">*</span></label>
+                                <input type="text" id="companyName" name="companyName" class="form-input" required>
+                                <span class="form-error" id="error-companyName"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="industry" class="form-label">Industry <span class="required">*</span></label>
+                                <input type="text" id="industry" name="industry" class="form-input" required>
+                                <span class="form-error" id="error-industry"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="companySize" class="form-label">Company Size <span class="required">*</span></label>
+                                <select id="companySize" name="companySize" class="form-select" required>
+                                    <option value="">Select...</script>
+                                    <option value="1-10">1-10 employees</option>
+                                    <option value="11-50">11-50 employees</option>
+                                    <option value="51-200">51-200 employees</option>
+                                    <option value="201-500">201-500 employees</option>
+                                    <option value="500+">500+ employees</option>
+                                </select>
+                                <span class="form-error" id="error-companySize"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="website" class="form-label">Website</label>
+                                <input type="url" id="website" name="website" class="form-input" placeholder="https://example.com">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Contact Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName" class="form-label">Contact Name <span class="required">*</span></label>
+                                <input type="text" id="contactName" name="contactName" class="form-input" required>
+                                <span class="form-error" id="error-contactName"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactTitle" class="form-label">Title/Position <span class="required">*</span></label>
+                                <input type="text" id="contactTitle" name="contactTitle" class="form-input" required>
+                                <span class="form-error" id="error-contactTitle"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                                <span class="form-error" id="error-email"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" class="form-input" required>
+                                <span class="form-error" id="error-phone"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>ITAD Needs</h3>
+                        <div class="form-group">
+                            <label for="equipmentType" class="form-label">Equipment Type <span class="required">*</span></label>
+                            <select id="equipmentType" name="equipmentType" class="form-select" required>
+                                <option value="">Select...</option>
+                                <option value="uniform-laptops">Uniform Laptops (high priority - fee waiver eligible)</option>
+                                <option value="mixed-laptops">Mixed Laptops</option>
+                                <option value="desktops">Desktops</option>
+                                <option value="servers">Servers</option>
+                                <option value="peripherals">Peripherals (monitors, keyboards, mice)</option>
+                                <option value="mixed">Mixed Equipment</option>
+                            </select>
+                            <span class="form-error" id="error-equipmentType"></span>
+                            <small class="form-help">Uniform laptop fleets are prioritized and may qualify for fee waivers</small>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fleetSize" class="form-label">Estimated Quantity <span class="required">*</span></label>
+                                <input type="number" id="fleetSize" name="fleetSize" class="form-input" min="1" required>
+                                <span class="form-error" id="error-fleetSize"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="timeline" class="form-label">Timeline <span class="required">*</span></label>
+                                <select id="timeline" name="timeline" class="form-select" required>
+                                    <option value="">Select...</option>
+                                    <option value="immediate">Immediate (within 2 weeks)</option>
+                                    <option value="1-month">Within 1 month</option>
+                                    <option value="2-3-months">2-3 months</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                                <span class="form-error" id="error-timeline"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="additionalInfo" class="form-label">Additional Information</label>
+                            <textarea id="additionalInfo" name="additionalInfo" class="form-textarea" rows="4" placeholder="Tell us about your specific needs, location, or any questions..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Interests</h3>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="csr-reporting">
+                                <span>CSR Reporting &amp; Impact Certificates</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="public-recognition">
+                                <span>Public Recognition in Partner Directory</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="co-marketing">
+                                <span>Co-Marketing Opportunities</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="volunteer-engagement">
+                                <span>Employee Volunteer Engagement</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-notice">
+                        <p><strong>Note:</strong> This is a self-serve form. All submissions are automatically processed. We'll contact you within 2-3 business days to discuss your needs and provide a quote.</p>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Submit Partnership Inquiry</button>
+                </form>
+                <div id="formSuccess" class="form-success" style="display: none;">
+                    <div class="success-icon">✓</div>
+                    <h3>Inquiry Submitted Successfully!</h3>
+                    <p>Thank you for your interest in partnering with Free Geek Toronto. We've received your information and will contact you within 2-3 business days to discuss your ITAD needs.</p>
+                    <button type="button" id="resetFormBtn" class="btn btn-secondary">Submit Another Inquiry</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <span class="footer-logo">Free Geek</span>
+                        <span class="footer-subtitle">Toronto</span>
+                    </div>
+                    <p class="footer-description">A non-profit social enterprise reusing electronic waste to provide affordable technology and job training.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="itad.html">Corporate ITAD</a></li>
+                        <li><a href="partners.html">Partner Program</a></li>
+                        <li><a href="calculator.html">Impact Calculator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="resources.html">Resource Hub</a></li>
+                        <li><a href="directory.html">Partner Directory</a></li>
+                        <li><a href="https://freegeektoronto.org/" target="_blank" rel="noopener">Main Website</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.linkedin.com/company/freegeektoronto/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/freegeektoronto/" target="_blank" rel="noopener">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Free Geek Toronto. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

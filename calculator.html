@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact Calculator | Free Geek Toronto</title>
+    <meta name="description" content="Calculate your environmental and social impact when donating IT equipment to Free Geek Toronto.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="nav-logo">Free Geek</span>
+                <span class="nav-subtitle">Toronto</span>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="itad.html" class="nav-link">Corporate ITAD</a>
+                </li>
+                <li class="nav-item">
+                    <a href="partners.html" class="nav-link">Become a Partner</a>
+                </li>
+                <li class="nav-item">
+                    <a href="calculator.html" class="nav-link nav-link-active">Impact Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resources.html" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="directory.html" class="nav-link">Partner Directory</a>
+                </li>
+                <li class="nav-item nav-item-cta">
+                    <a href="partners.html#partner-form" class="nav-cta">Get Started</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Impact Calculator</h1>
+            <p class="page-subtitle">See the environmental and social impact of your IT equipment donation</p>
+        </div>
+    </header>
+
+    <!-- Calculator Section -->
+    <section class="section">
+        <div class="container">
+            <div class="calculator-container">
+                <div class="calculator-inputs">
+                    <h2>Calculate Your Impact</h2>
+                    <div class="calculator-group">
+                        <label for="fleetSizeSlider" class="calculator-label">Fleet Size (Laptops)</label>
+                        <div class="slider-container">
+                            <input type="range" id="fleetSizeSlider" class="calculator-slider" min="0" max="500" step="1" value="0">
+                            <div class="slider-values">
+                                <span>0</span>
+                                <span>250</span>
+                                <span>500</span>
+                            </div>
+                        </div>
+                        <div class="calculator-display">
+                            <span id="fleetSizeDisplay">0</span> laptops
+                        </div>
+                    </div>
+
+                    <div class="calculator-group">
+                        <label for="equipmentTypeCalc" class="calculator-label">Equipment Type</label>
+                        <select id="equipmentTypeCalc" class="calculator-select">
+                            <option value="laptop" selected>Laptops (Uniform)</option>
+                            <option value="mixed">Mixed Laptops</option>
+                            <option value="desktop">Desktops</option>
+                            <option value="mixed-all">Mixed Equipment</option>
+                        </select>
+                    </div>
+
+                    <div class="calculator-note">
+                        <p><strong>Note:</strong> Uniform laptop fleets have the highest impact and may qualify for fee waivers. Our calculations are based on average refurbishing rates and impact metrics.</p>
+                    </div>
+                </div>
+
+                <div class="calculator-results">
+                    <h2>Your Projected Impact</h2>
+                    <div class="result-cards">
+                        <div class="result-card result-card-primary">
+                            <div class="result-content">
+                                <div class="result-number" id="ewasteDiverted">0</div>
+                                <div class="result-label">Pounds of E-Waste Diverted</div>
+                            </div>
+                        </div>
+                        <div class="result-card result-card-secondary">
+                            <div class="result-content">
+                                <div class="result-number" id="devicesRefurb">0</div>
+                                <div class="result-label">Refurbished Devices for Low-Income Residents</div>
+                            </div>
+                        </div>
+                        <div class="result-card result-card-tertiary">
+                            <div class="result-content">
+                                <div class="result-number" id="co2Saved">0</div>
+                                <div class="result-label">Pounds of CO₂ Equivalent Saved</div>
+                            </div>
+                        </div>
+                        <div class="result-card result-card-quaternary">
+                            <div class="result-content">
+                                <div class="result-number" id="trainingHours">0</div>
+                                <div class="result-label">Job Training Hours Provided</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculator-cta">
+                        <p>Ready to turn this impact into reality?</p>
+                        <a href="partners.html#partner-form" class="btn btn-primary">Become a Partner</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <span class="footer-logo">Free Geek</span>
+                        <span class="footer-subtitle">Toronto</span>
+                    </div>
+                    <p class="footer-description">A non-profit social enterprise reusing electronic waste to provide affordable technology and job training.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="itad.html">Corporate ITAD</a></li>
+                        <li><a href="partners.html">Partner Program</a></li>
+                        <li><a href="calculator.html">Impact Calculator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="resources.html">Resource Hub</a></li>
+                        <li><a href="directory.html">Partner Directory</a></li>
+                        <li><a href="https://freegeektoronto.org/" target="_blank" rel="noopener">Main Website</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.linkedin.com/company/freegeektoronto/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/freegeektoronto/" target="_blank" rel="noopener">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Free Geek Toronto. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

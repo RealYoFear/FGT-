@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate as an Individual | Free Geek Toronto</title>
+    <meta name="description" content="Donate computers and computer accessories as an individual to Free Geek Toronto.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="nav-logo">Free Geek</span>
+                <span class="nav-subtitle">Toronto</span>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="itad.html" class="nav-link">Corporate ITAD</a>
+                </li>
+                <li class="nav-item">
+                    <a href="partners.html" class="nav-link">Become a Partner</a>
+                </li>
+                <li class="nav-item">
+                    <a href="calculator.html" class="nav-link">Impact Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resources.html" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="directory.html" class="nav-link">Partner Directory</a>
+                </li>
+                <li class="nav-item nav-item-cta">
+                    <a href="partners.html#partner-form" class="nav-cta">Get Started</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Donate as an Individual</h1>
+            <p class="page-subtitle">Help provide affordable technology to those in need</p>
+        </div>
+    </header>
+
+    <!-- Donation Info -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What We Accept</h2>
+                <p class="section-lead">We accept working and repairable computers and computer accessories</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Computers</h3>
+                    <p>Desktop computers, laptops, and all-in-one systems in working or repairable condition</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Peripherals</h3>
+                    <p>Monitors, keyboards, mice, speakers, and other computer accessories</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Components</h3>
+                    <p>RAM, hard drives, power supplies, and other computer components</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Form -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Donation Intake Form</h2>
+                <p class="section-lead">Tell us about your donation - self-serve and automated</p>
+            </div>
+            <div class="form-container">
+                <form id="individualDonationForm" class="partner-form" novalidate>
+                    <div class="form-section">
+                        <h3>Contact Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="donorName" class="form-label">Full Name <span class="required">*</span></label>
+                                <input type="text" id="donorName" name="donorName" class="form-input" required>
+                                <span class="form-error" id="error-donorName"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="donorEmail" class="form-label">Email Address <span class="required">*</span></label>
+                                <input type="email" id="donorEmail" name="donorEmail" class="form-input" required>
+                                <span class="form-error" id="error-donorEmail"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="donorPhone" class="form-label">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="donorPhone" name="donorPhone" class="form-input" required>
+                                <span class="form-error" id="error-donorPhone"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Donation Details</h3>
+                        <div class="form-group">
+                            <label for="donationType" class="form-label">Donation Type <span class="required">*</span></label>
+                            <select id="donationType" name="donationType" class="form-select" required>
+                                <option value="">Select...</option>
+                                <option value="laptop">Laptop</option>
+                                <option value="desktop">Desktop Computer</option>
+                                <option value="monitor">Monitor</option>
+                                <option value="peripherals">Peripherals (keyboard, mouse, etc.)</option>
+                                <option value="components">Computer Components</option>
+                                <option value="mixed">Mixed Items</option>
+                            </select>
+                            <span class="form-error" id="error-donationType"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="itemCondition" class="form-label">Condition <span class="required">*</span></label>
+                            <select id="itemCondition" name="itemCondition" class="form-select" required>
+                                <option value="">Select...</option>
+                                <option value="working">Working</option>
+                                <option value="repairable">Repairable</option>
+                                <option value="parts-only">Parts Only</option>
+                            </select>
+                            <span class="form-error" id="error-itemCondition"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="donationDescription" class="form-label">Description of Items <span class="required">*</span></label>
+                            <textarea id="donationDescription" name="donationDescription" class="form-textarea" rows="4" placeholder="Please describe the items you're donating, including make, model, and any details..." required></textarea>
+                            <span class="form-error" id="error-donationDescription"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-notice">
+                        <p><strong>Note:</strong> This is a self-serve form. All individual donations are accepted for computers and computer accessories. Corporate bulk donations of uniform laptops receive priority.</p>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Submit Donation Inquiry</button>
+                </form>
+                <div id="donationFormSuccess" class="form-success" style="display: none;">
+                    <div class="success-icon">✓</div>
+                    <h3>Donation Inquiry Submitted!</h3>
+                    <p>Thank you for your donation inquiry. We'll contact you with drop-off information and next steps.</p>
+                    <button type="button" id="resetDonationFormBtn" class="btn btn-secondary">Submit Another Inquiry</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <span class="footer-logo">Free Geek</span>
+                        <span class="footer-subtitle">Toronto</span>
+                    </div>
+                    <p class="footer-description">A non-profit social enterprise reusing electronic waste to provide affordable technology and job training.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="itad.html">Corporate ITAD</a></li>
+                        <li><a href="partners.html">Partner Program</a></li>
+                        <li><a href="calculator.html">Impact Calculator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="resources.html">Resource Hub</a></li>
+                        <li><a href="directory.html">Partner Directory</a></li>
+                        <li><a href="https://freegeektoronto.org/" target="_blank" rel="noopener">Main Website</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.linkedin.com/company/freegeektoronto/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/freegeektoronto/" target="_blank" rel="noopener">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Free Geek Toronto. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
