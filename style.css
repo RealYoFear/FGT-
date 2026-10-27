@@ -555,6 +555,19 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+.quick-card {
+  text-decoration: none;
+  background: var(--bg-elevated);
+  padding: var(--space-lg);
+  padding-right: calc(var(--space-lg) + 24px);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+  display: block;
+  position: relative;
+}
+
 /* ---------- 10. FOOTER ------------------------------------------------ */
 .footer {
   background: var(--text-primary);
