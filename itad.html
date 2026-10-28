@@ -7,11 +7,10 @@
     <meta name="description" content="Certified IT Asset Disposition for Toronto businesses. Secure data destruction with DBAN and ShredOS, CSR reporting, flexible pricing.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
             <div class="nav-brand">
@@ -24,216 +23,230 @@
                 <span></span>
             </button>
             <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="itad.html" class="nav-link nav-link-active">Corporate ITAD</a>
-                </li>
-                <li class="nav-item">
-                    <a href="partners.html" class="nav-link">Become a Partner</a>
-                </li>
-                <li class="nav-item">
-                    <a href="calculator.html" class="nav-link">Impact Calculator</a>
-                </li>
-                <li class="nav-item">
-                    <a href="resources.html" class="nav-link">Resources</a>
-                </li>
-                <li class="nav-item">
-                    <a href="directory.html" class="nav-link">Partner Directory</a>
-                </li>
-                <li class="nav-item nav-item-cta">
-                    <a href="partners.html#partner-form" class="nav-cta">Get Started</a>
-                </li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="itad.html" class="nav-link nav-link-active">Corporate ITAD</a></li>
+                <li class="nav-item"><a href="partners.html" class="nav-link">Become a Partner</a></li>
+                <li class="nav-item"><a href="calculator.html" class="nav-link">Impact Calculator</a></li>
+                <li class="nav-item"><a href="resources.html" class="nav-link">Resources</a></li>
+                <li class="nav-item"><a href="directory.html" class="nav-link">Partner Directory</a></li>
+                <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
+                <li class="nav-item nav-item-cta"><a href="partners.html#partner-form" class="nav-cta">Get Started</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <header class="page-header">
-        <div class="container">
-            <h1 class="page-title">Corporate IT Asset Disposition (ITAD)</h1>
-            <p class="page-subtitle">Certified, secure, and sustainable disposal of your retired IT equipment</p>
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-kicker">Corporate ITAD</p>
+                <h1 class="hero-title">Certified IT Asset Disposition</h1>
+                <p class="hero-subtitle">Secure data destruction, responsible recycling, and measurable community impact for Toronto businesses.</p>
+                <div class="hero-actions">
+                    <a href="partners.html#partner-form" class="btn btn-primary">Start the Conversation</a>
+                    <a href="#process" class="btn btn-ghost">View Process</a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Data Security Section -->
     <section class="section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Data Security &amp; Sanitization</h2>
-                <p class="section-lead">Your data security is our top priority. We follow industry-leading standards for secure data destruction.</p>
-            </div>
-            <div style="margin-bottom: var(--space-2xl); text-align: center;">
-                <img src="itad-1.png" alt="IT Asset Disposition" style="max-width: 700px; width: 100%; height: 300px; object-fit: cover; border-radius: var(--radius-xl); box-shadow: var(--shadow-md);">
-            </div>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h3>Trusted Open-Source Tools</h3>
-                    <p>We perform secure data destruction using trusted open-source tools like <strong>DBAN</strong> (Darik's Boot and Nuke) and <strong>ShredOS</strong>. These tools are industry-recognized for thorough data sanitization.</p>
+            <div class="split">
+                <div class="split-content">
+                    <p class="section-kicker">Security</p>
+                    <h2 class="section-title">Data security and sanitization</h2>
+                    <p class="section-lead">Your data security is our top priority. We follow industry-leading standards for secure data destruction.</p>
+                    <div class="grid-3">
+                        <article class="card">
+                            <h3 class="card-title">Trusted tools</h3>
+                            <p class="card-text">Secure data destruction using DBAN (Darik's Boot and Nuke) and ShredOS, industry-recognized for thorough sanitization.</p>
+                        </article>
+                        <article class="card">
+                            <h3 class="card-title">Batch-verified</h3>
+                            <p class="card-text">Processes are batch-automated and tracked by trained volunteers to maintain the highest security standards.</p>
+                        </article>
+                        <article class="card">
+                            <h3 class="card-title">Certified destruction</h3>
+                            <p class="card-text">Documented destruction with certificates available for your compliance records.</p>
+                        </article>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <h3>Batch-Automated by Trained Volunteers</h3>
-                    <p>Our processes are designed for batch automation, allowing our skilled volunteers to efficiently sanitize large fleets while maintaining the highest security standards.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Certified Destruction</h3>
-                    <p>All data destruction activities are documented and can be verified. We provide certificates of data destruction upon request for your compliance records.</p>
+                <div class="split-media">
+                    <div class="media-frame">
+                        <img src="itad-1.png" alt="IT equipment ready for secure disposition">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CSR & Environmental Reporting -->
-    <section class="section section-alt">
+    <section class="section section-muted" id="process">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">CSR &amp; Environmental Reporting</h2>
-                <p class="section-lead">Demonstrate your commitment to sustainability with comprehensive impact reporting.</p>
-            </div>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h3>Environmental Impact Certificates</h3>
-                    <p>Corporate donors receive official environmental impact certificates detailing the pounds of e-waste diverted from landfills and the carbon footprint reduction achieved.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>CSR Compliance Documentation</h3>
-                    <p>Our reporting helps you meet your Corporate Social Responsibility targets with detailed metrics on community impact, waste diversion, and social value creation.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Measurable Impact</h3>
-                    <p>Track quantifiable outcomes: devices refurbished and donated, people trained, jobs created in our social enterprise, and environmental metrics.</p>
-                </div>
+            <header class="section-header">
+                <p class="section-kicker">Process</p>
+                <h2 class="section-title">From pickup to reporting</h2>
+                <p class="section-lead">A clean, verifiable workflow designed for accountability.</p>
+            </header>
+            <div class="grid-4">
+                <article class="card">
+                    <h3 class="card-title">1. Intake</h3>
+                    <p class="card-text">Submit your fleet details through our partner intake form. We assess eligibility and provide a quote.</p>
+                </article>
+                <article class="card">
+                    <h3 class="card-title">2. Collection</h3>
+                    <p class="card-text">Coordinated pickup with chain of custody tracking across Toronto.</p>
+                </article>
+                <article class="card">
+                    <h3 class="card-title">3. Sanitization</h3>
+                    <p class="card-text">Secure data destruction using DBAN or ShredOS, batch-verified and documented.</p>
+                </article>
+                <article class="card">
+                    <h3 class="card-title">4. Reporting</h3>
+                    <p class="card-text">Reuse prioritized, e-waste recycled responsibly, and CSR impact reporting delivered.</p>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Model -->
     <section class="section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Service Fee Structure</h2>
-                <p class="section-lead">Transparent pricing that rewards sustainable choices</p>
-            </div>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Standard Service</h3>
-                    <div class="pricing-amount">Fees Apply</div>
-                    <ul class="pricing-features">
-                        <li>✓ Certified data wiping and sanitization</li>
-                        <li>✓ Secure hardware pickup</li>
-                        <li>✓ Environmental impact certificate</li>
-                        <li>✓ Basic CSR reporting</li>
-                    </ul>
-                    <p class="pricing-note">For mixed equipment, older devices, or non-uniform fleets</p>
+            <div class="split split-reverse">
+                <div class="split-content">
+                    <p class="section-kicker">Impact</p>
+                    <h2 class="section-title">CSR and environmental reporting</h2>
+                    <p class="section-lead">Demonstrate your commitment to sustainability with comprehensive impact reporting.</p>
+                    <div class="grid-2">
+                        <article class="card">
+                            <h3 class="card-title">Environmental impact</h3>
+                            <p class="card-text">Official impact certificates detailing e-waste diverted from landfills and carbon footprint reduction.</p>
+                        </article>
+                        <article class="card">
+                            <h3 class="card-title">CSR documentation</h3>
+                            <p class="card-text">Detailed metrics on community impact, waste diversion, and social value creation to meet sustainability targets.</p>
+                        </article>
+                    </div>
                 </div>
-                <div class="pricing-card pricing-card-highlight">
-                    <div class="pricing-badge">Recommended</div>
-                    <h3>Bulk Laptop Donation</h3>
-                    <div class="pricing-amount pricing-amount-free">Fees Waived</div>
-                    <ul class="pricing-features">
-                        <li>✓ All standard services included</li>
-                        <li>✓ Certified data wiping and sanitization</li>
-                        <li>✓ Free hardware pickup</li>
-                        <li>✓ Enhanced CSR and impact reporting</li>
-                        <li>✓ Public recognition opportunities</li>
-                    </ul>
-                    <p class="pricing-note"><strong>Qualifies:</strong> High-yield, uniform laptop fleets in working or repairable condition</p>
+                <div class="split-media">
+                    <div class="media-frame">
+                        <img src="itad-2.png" alt="Refurbished devices prepared for community distribution">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Donation Routing -->
+    <section class="section section-muted">
+        <div class="container">
+            <header class="section-header">
+                <p class="section-kicker">Pricing</p>
+                <h2 class="section-title">Service fee structure</h2>
+                <p class="section-lead">Transparent pricing that rewards sustainable choices.</p>
+            </header>
+            <div class="table-wrap table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Details</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Standard service</td>
+                            <td>Fees apply</td>
+                            <td>Mixed equipment, older devices, or non-uniform fleets</td>
+                        </tr>
+                        <tr>
+                            <td>Bulk uniform laptops</td>
+                            <td>Fees waived</td>
+                            <td>High-yield, uniform laptop fleets in working or repairable condition</td>
+                        </tr>
+                        <tr>
+                            <td>Data destruction</td>
+                            <td>Included with service</td>
+                            <td>DBAN / ShredOS, batch-verified</td>
+                        </tr>
+                        <tr>
+                            <td>Pickup &amp; logistics</td>
+                            <td>Quoted per engagement</td>
+                            <td>Coordinated across Toronto</td>
+                        </tr>
+                        <tr>
+                            <td>Impact reporting</td>
+                            <td>Included</td>
+                            <td>Environmental impact certificate and CSR documentation</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
     <section class="section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Donation Routing &amp; Filtering</h2>
-                <p class="section-lead">Our intake process optimizes for maximum community impact</p>
+            <header class="section-header">
+                <p class="section-kicker">Routing</p>
+                <h2 class="section-title">Donation routing and filtering</h2>
+                <p class="section-lead">Our intake process optimizes for maximum community impact.</p>
+            </header>
+            <div class="grid-3">
+                <article class="card">
+                    <h3 class="card-title">Individual donations</h3>
+                    <p class="card-text">We accept individual donations of computers and computer accessories through our standard donation intake.</p>
+                </article>
+                <article class="card">
+                    <h3 class="card-title">Corporate priority</h3>
+                    <p class="card-text">We prioritize corporate bulk submissions of uniform laptops to optimize refurbishment efficiency.</p>
+                </article>
+                <article class="card">
+                    <h3 class="card-title">Focused acceptance</h3>
+                    <p class="card-text">Form logic directs household donations to computers and accessories while prioritizing corporate bulk laptop fleets.</p>
+                </article>
             </div>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h3>Individual Donations</h3>
-                    <p>We accept individual donations of computers and computer accessories. These go through our standard donation intake process.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Corporate Priority</h3>
-                    <p>We prioritize corporate bulk submissions of uniform laptops to optimize refurbishment efficiency and serve more community members.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Focused Acceptance</h3>
-                    <p>Our form logic limits household donations to computers and accessories while prioritizing corporate bulk submissions of uniform laptops.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Misconception Management -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Understanding Our Model</h2>
-                <p class="section-lead">Clearing up common misconceptions</p>
-            </div>
-            <div class="misconception-content">
-                <div class="misconception-item">
-                    <h3>"Everything at Free Geek is free"</h3>
-                    <p><strong>Our reality:</strong> While we provide affordable technology and job training to our community, corporate ITAD services have associated costs for secure data destruction, logistics, and processing. Our pricing model is transparent and designed to be sustainable while maximizing our social impact.</p>
-                </div>
-                <div class="misconception-item">
-                    <h3>"All donations are treated the same"</h3>
-                    <p><strong>Our reality:</strong> We prioritize corporate bulk submissions of uniform laptops because they optimize our refurbishment efficiency. This allows us to serve more community members with quality devices while keeping our operations lean.</p>
-                </div>
-                <div class="misconception-item">
-                    <h3>"Free services mean lower quality"</h3>
-                    <p><strong>Our reality:</strong> We use professional-grade open-source tools (DBAN, ShredOS) and follow strict security protocols. Our trained volunteers and processes meet rigorous standards for corporate ITAD requirements.</p>
-                </div>
-            </div>
-            <div class="cta-box">
-                <h3>Ready to partner with us?</h3>
-                <p>Contact us to discuss your ITAD needs and discover how your organization can make a lasting impact</p>
-                <a href="partners.html#partner-form" class="btn btn-primary">Start the Conversation</a>
+            <div style="margin-top: var(--space-10); text-align: center;">
+                <a href="partners.html#partner-form" class="btn btn-primary">Discuss your ITAD needs</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
+            <div class="footer-grid">
+                <div>
                     <div class="footer-brand">
                         <span class="footer-logo">Free Geek</span>
                         <span class="footer-subtitle">Toronto</span>
                     </div>
-                    <p class="footer-description">A non-profit social enterprise reusing electronic waste to provide affordable technology and job training.</p>
+                    <p class="footer-text">A non-profit social enterprise reusing electronic waste to provide affordable technology and job training.</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul class="footer-links">
+                <div>
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-list">
                         <li><a href="itad.html">Corporate ITAD</a></li>
                         <li><a href="partners.html">Partner Program</a></li>
                         <li><a href="calculator.html">Impact Calculator</a></li>
+                        <li><a href="donate.html">Individual Donations</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Resources</h4>
-                    <ul class="footer-links">
+                <div>
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-list">
                         <li><a href="resources.html">Resource Hub</a></li>
                         <li><a href="directory.html">Partner Directory</a></li>
                         <li><a href="https://freegeektoronto.org/" target="_blank" rel="noopener">Main Website</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <ul class="footer-links">
+                <div>
+                    <h4 class="footer-heading">Connect</h4>
+                    <ul class="footer-list">
                         <li><a href="https://www.linkedin.com/company/freegeektoronto/" target="_blank" rel="noopener">LinkedIn</a></li>
                         <li><a href="https://www.instagram.com/freegeektoronto/" target="_blank" rel="noopener">Instagram</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Free Geek Toronto. All rights reserved.</p>
+                <p>© 2024 Free Geek Toronto. All rights reserved.</p>
             </div>
         </div>
     </footer>

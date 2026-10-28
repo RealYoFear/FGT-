@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate as an Individual | Free Geek Toronto</title>
-    <meta name="description" content="Donate computers and computer accessories as an individual to Free Geek Toronto.">
+    <title>Donate | Free Geek Toronto</title>
+    <meta name="description" content="Donate computers and accessories to Free Geek Toronto. Support affordable technology access and job training in the community.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
             <div class="nav-brand">
@@ -24,183 +23,196 @@
                 <span></span>
             </button>
             <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="itad.html" class="nav-link">Corporate ITAD</a>
-                </li>
-                <li class="nav-item">
-                    <a href="partners.html" class="nav-link">Become a Partner</a>
-                </li>
-                <li class="nav-item">
-                    <a href="calculator.html" class="nav-link">Impact Calculator</a>
-                </li>
-                <li class="nav-item">
-                    <a href="resources.html" class="nav-link">Resources</a>
-                </li>
-                <li class="nav-item">
-                    <a href="directory.html" class="nav-link">Partner Directory</a>
-                </li>
-                <li class="nav-item nav-item-cta">
-                    <a href="partners.html#partner-form" class="nav-cta">Get Started</a>
-                </li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="itad.html" class="nav-link">Corporate ITAD</a></li>
+                <li class="nav-item"><a href="partners.html" class="nav-link">Become a Partner</a></li>
+                <li class="nav-item"><a href="calculator.html" class="nav-link">Impact Calculator</a></li>
+                <li class="nav-item"><a href="resources.html" class="nav-link">Resources</a></li>
+                <li class="nav-item"><a href="directory.html" class="nav-link">Partner Directory</a></li>
+                <li class="nav-item"><a href="donate.html" class="nav-link nav-link-active">Donate</a></li>
+                <li class="nav-item nav-item-cta"><a href="partners.html#partner-form" class="nav-cta">Get Started</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <header class="page-header">
-        <div class="container">
-            <h1 class="page-title">Donate as an Individual</h1>
-            <p class="page-subtitle">Help provide affordable technology to those in need</p>
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-kicker">Individual Donations</p>
+                <h1 class="hero-title">Donate Computers and Accessories</h1>
+                <p class="hero-subtitle">Your working or repairable equipment helps provide affordable technology and supports job training for underrepresented groups in Toronto.</p>
+                <div class="hero-actions">
+                    <a href="#donation-form" class="btn btn-primary">Submit Donation Inquiry</a>
+                    <a href="itad.html" class="btn btn-ghost">Corporate ITAD</a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Donation Info -->
     <section class="section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">What We Accept</h2>
-                <p class="section-lead">We accept working and repairable computers and computer accessories</p>
-            </div>
-            <div style="margin-bottom: var(--space-2xl); text-align: center;">
-                <img src="donate.png" alt="Computer donations" style="max-width: 700px; width: 100%; height: 300px; object-fit: cover; border-radius: var(--radius-xl); box-shadow: var(--shadow-md);">
-            </div>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h3>Computers</h3>
-                    <p>Desktop computers, laptops, and all-in-one systems in working or repairable condition</p>
+            <div class="split">
+                <div class="split-content">
+                    <p class="section-kicker">What to donate</p>
+                    <h2 class="section-title">Accepted items</h2>
+                    <p class="section-lead">We accept working and repairable equipment that can go back into the community.</p>
+                    <div class="grid-2">
+                        <article class="card">
+                            <h3 class="card-title">Computers</h3>
+                            <p class="card-text">Laptops and desktops in working or repairable condition.</p>
+                        </article>
+                        <article class="card">
+                            <h3 class="card-title">Peripherals</h3>
+                            <p class="card-text">Monitors, keyboards, mice, and other computer accessories.</p>
+                        </article>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <h3>Peripherals</h3>
-                    <p>Monitors, keyboards, mice, speakers, and other computer accessories</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Components</h3>
-                    <p>RAM, hard drives, power supplies, and other computer components</p>
+                <div class="split-media">
+                    <div class="media-frame">
+                        <img src="workspace-tech.png" alt="Donated technology equipment ready for refurbishment">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Donation Form -->
-    <section class="section section-alt">
+    <section class="section section-muted">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Donation Intake Form</h2>
-                <p class="section-lead">Tell us about your donation - self-serve and automated</p>
+            <header class="section-header">
+                <p class="section-kicker">Process</p>
+                <h2 class="section-title">How it works</h2>
+                <p class="section-lead">Simple and straightforward donation process.</p>
+            </header>
+            <div class="grid-3">
+                <article class="card">
+                    <h3 class="card-title">1. Submit inquiry</h3>
+                    <p class="card-text">Fill out the donation form below with details about your items.</p>
+                </article>
+                <article class="card">
+                    <h3 class="card-title">2. Get details</h3>
+                    <p class="card-text">We'll reach out with drop-off details and next steps.</p>
+                </article>
+                <article class="card">
+                    <h3 class="card-title">3. Drop off</h3>
+                    <p class="card-text">Bring your items to the designated drop-off location.</p>
+                </article>
             </div>
-            <div class="form-container">
-                <form id="individualDonationForm" class="partner-form" novalidate>
-                    <div class="form-section">
-                        <h3>Contact Information</h3>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="donorName" class="form-label">Full Name <span class="required">*</span></label>
-                                <input type="text" id="donorName" name="donorName" class="form-input" required>
-                                <span class="form-error" id="error-donorName"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="donorEmail" class="form-label">Email Address <span class="required">*</span></label>
-                                <input type="email" id="donorEmail" name="donorEmail" class="form-input" required>
-                                <span class="form-error" id="error-donorEmail"></span>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="donorPhone" class="form-label">Phone Number <span class="required">*</span></label>
-                                <input type="tel" id="donorPhone" name="donorPhone" class="form-input" required>
-                                <span class="form-error" id="error-donorPhone"></span>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+    </section>
 
-                    <div class="form-section">
-                        <h3>Donation Details</h3>
-                        <div class="form-group">
-                            <label for="donationType" class="form-label">Donation Type <span class="required">*</span></label>
-                            <select id="donationType" name="donationType" class="form-select" required>
+    <section class="section" id="donation-form">
+        <div class="container">
+            <header class="section-header">
+                <p class="section-kicker">Inquiry</p>
+                <h2 class="section-title">Donation inquiry form</h2>
+                <p class="section-lead">Tell us about your equipment and we'll get back to you with drop-off details.</p>
+            </header>
+            <div class="card" style="max-width: 880px;">
+                <form id="individualDonationForm" novalidate>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-4);">
+                        <div>
+                            <label for="donorName" style="display: block; margin-bottom: var(--space-2); font-weight: 500;">Full Name *</label>
+                            <input type="text" id="donorName" name="donorName" style="width: 100%; padding: 0.6rem 0.8rem; border: 1px solid var(--border-strong); border-radius: var(--radius-sm); font-family: var(--font-sans);">
+                            <div class="form-error" id="error-donorName" style="color: #d33; font-size: 0.9rem; margin-top: var(--space-1);"></div>
+                        </div>
+                        <div>
+                            <label for="donorEmail" style="display: block; margin-bottom: var(--space-2); font-weight: 500;">Email Address *</label>
+                            <input type="email" id="donorEmail" name="donorEmail" style="width: 100%; padding: 0.6rem 0.8rem; border: 1px solid var(--border-strong); border-radius: var(--radius-sm); font-family: var(--font-sans);">
+                            <div class="form-error" id="error-donorEmail" style="color: #d33; font-size: 0.9rem; margin-top: var(--space-1);"></div>
+                        </div>
+                        <div>
+                            <label for="donorPhone" style="display: block; margin-bottom: var(--space-2); font-weight: 500;">Phone Number *</label>
+                            <input type="tel" id="donorPhone" name="donorPhone" style="width: 100%; padding: 0.6rem 0.8rem; border: 1px solid var(--border-strong); border-radius: var(--radius-sm); font-family: var(--font-sans);">
+                            <div class="form-error" id="error-donorPhone" style="color: #d33; font-size: 0.9rem; margin-top: var(--space-1);"></div>
+                        </div>
+                        <div>
+                            <label for="donationType" style="display: block; margin-bottom: var(--space-2); font-weight: 500;">Donation Type *</label>
+                            <select id="donationType" name="donationType" style="width: 100%; padding: 0.6rem 0.8rem; border: 1px solid var(--border-strong); border-radius: var(--radius-sm); font-family: var(--font-sans);">
                                 <option value="">Select...</option>
                                 <option value="laptop">Laptop</option>
-                                <option value="desktop">Desktop Computer</option>
+                                <option value="desktop">Desktop</option>
                                 <option value="monitor">Monitor</option>
-                                <option value="peripherals">Peripherals (keyboard, mouse, etc.)</option>
-                                <option value="components">Computer Components</option>
+                                <option value="peripherals">Peripherals (keyboard/mouse/etc.)</option>
                                 <option value="mixed">Mixed Items</option>
                             </select>
-                            <span class="form-error" id="error-donationType"></span>
+                            <div class="form-error" id="error-donationType" style="color: #d33; font-size: 0.9rem; margin-top: var(--space-1);"></div>
                         </div>
-                        <div class="form-group">
-                            <label for="itemCondition" class="form-label">Condition <span class="required">*</span></label>
-                            <select id="itemCondition" name="itemCondition" class="form-select" required>
+                        <div>
+                            <label for="itemCondition" style="display: block; margin-bottom: var(--space-2); font-weight: 500;">Condition *</label>
+                            <select id="itemCondition" name="itemCondition" style="width: 100%; padding: 0.6rem 0.8rem; border: 1px solid var(--border-strong); border-radius: var(--radius-sm); font-family: var(--font-sans);">
                                 <option value="">Select...</option>
                                 <option value="working">Working</option>
                                 <option value="repairable">Repairable</option>
-                                <option value="parts-only">Parts Only</option>
+                                <option value="unknown">Unknown</option>
                             </select>
-                            <span class="form-error" id="error-itemCondition"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="donationDescription" class="form-label">Description of Items <span class="required">*</span></label>
-                            <textarea id="donationDescription" name="donationDescription" class="form-textarea" rows="4" placeholder="Please describe the items you're donating, including make, model, and any details..." required></textarea>
-                            <span class="form-error" id="error-donationDescription"></span>
+                            <div class="form-error" id="error-itemCondition" style="color: #d33; font-size: 0.9rem; margin-top: var(--space-1);"></div>
                         </div>
                     </div>
-
-                    <div class="form-notice">
-                        <p><strong>Note:</strong> This is a self-serve form. All individual donations are accepted for computers and computer accessories. Corporate bulk donations of uniform laptops receive priority.</p>
+                    <div style="margin-top: var(--space-4);">
+                        <label for="donationDescription" style="display: block; margin-bottom: var(--space-2); font-weight: 500;">Item Details *</label>
+                        <textarea id="donationDescription" name="donationDescription" rows="4" placeholder="Please describe the items, quantities, and any details..." style="width: 100%; padding: 0.6rem 0.8rem; border: 1px solid var(--border-strong); border-radius: var(--radius-sm); font-family: var(--font-sans); resize: vertical;"></textarea>
+                        <div class="form-error" id="error-donationDescription" style="color: #d33; font-size: 0.9rem; margin-top: var(--space-1);"></div>
                     </div>
-
-                    <button type="submit" class="btn btn-primary btn-large">Submit Donation Inquiry</button>
+                    <div style="margin-top: var(--space-6);">
+                        <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                    </div>
                 </form>
-                <div id="donationFormSuccess" class="form-success" style="display: none;">
-                    <div class="success-icon">✓</div>
-                    <h3>Donation Inquiry Submitted!</h3>
-                    <p>Thank you for your donation inquiry. We'll contact you with drop-off information and next steps.</p>
-                    <button type="button" id="resetDonationFormBtn" class="btn btn-secondary">Submit Another Inquiry</button>
+                <div id="donationFormSuccess" style="display: none; text-align: center; padding: var(--space-10);">
+                    <h3 style="font-family: var(--font-display); font-size: 1.8rem; margin-bottom: var(--space-4);">Inquiry Submitted</h3>
+                    <p style="color: var(--ink-secondary); margin-bottom: var(--space-6);">Thank you for your donation inquiry. We'll contact you soon with drop-off details and next steps.</p>
+                    <button type="button" id="resetDonationFormBtn" class="btn btn-ghost">Submit Another Inquiry</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <section class="section section-muted">
+        <div class="container">
+            <header class="section-header">
+                <p class="section-kicker">Note</p>
+                <h2 class="section-title">Corporate bulk donations</h2>
+                <p class="section-lead">Corporate bulk donations of uniform laptops are prioritized for refurbishment efficiency. Please use our <a href="partners.html">Partner Program</a> for corporate ITAD needs.</p>
+            </header>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
+            <div class="footer-grid">
+                <div>
                     <div class="footer-brand">
                         <span class="footer-logo">Free Geek</span>
                         <span class="footer-subtitle">Toronto</span>
                     </div>
-                    <p class="footer-description">A non-profit social enterprise reusing electronic waste to provide affordable technology and job training.</p>
+                    <p class="footer-text">A non-profit social enterprise reusing electronic waste to provide affordable technology and job training.</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul class="footer-links">
+                <div>
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-list">
                         <li><a href="itad.html">Corporate ITAD</a></li>
                         <li><a href="partners.html">Partner Program</a></li>
                         <li><a href="calculator.html">Impact Calculator</a></li>
+                        <li><a href="donate.html">Individual Donations</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Resources</h4>
-                    <ul class="footer-links">
+                <div>
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-list">
                         <li><a href="resources.html">Resource Hub</a></li>
                         <li><a href="directory.html">Partner Directory</a></li>
                         <li><a href="https://freegeektoronto.org/" target="_blank" rel="noopener">Main Website</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <ul class="footer-links">
+                <div>
+                    <h4 class="footer-heading">Connect</h4>
+                    <ul class="footer-list">
                         <li><a href="https://www.linkedin.com/company/freegeektoronto/" target="_blank" rel="noopener">LinkedIn</a></li>
                         <li><a href="https://www.instagram.com/freegeektoronto/" target="_blank" rel="noopener">Instagram</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Free Geek Toronto. All rights reserved.</p>
+                <p>© 2024 Free Geek Toronto. All rights reserved.</p>
             </div>
         </div>
     </footer>
